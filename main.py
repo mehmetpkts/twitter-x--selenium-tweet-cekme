@@ -45,14 +45,14 @@ class Twitter:
         self.browser.get("https://x.com/explore")   # https://x.com/explore ,  https://twitter.com/explore
         time.sleep(7)
     
-    def clickMehmetPektas(self):
+    def clickArama(self):
         time.sleep(3)
-        mehmetInput = self.browser.find_element(By.TAG_NAME,"input")
+        girInput = self.browser.find_element(By.TAG_NAME,"input")
         
-        mehmetInput.send_keys(arama)
+        girInput.send_keys(arama)
         time.sleep(5)
         
-        mehmetInput.send_keys(Keys.ENTER)
+        girInput.send_keys(Keys.ENTER)
         
         time.sleep(7)
         
@@ -76,6 +76,6 @@ app.signInPassword()
 
 app.clickExplore()
 
-app.clickMehmetPektas()
+app.clickArama()
 
 app.countDiv()
